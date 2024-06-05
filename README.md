@@ -12,6 +12,8 @@ The EITS service is the capture, computation, and rendering service intended for
 - Septentrio Mosaic-X5 GNSS Receiver
 - Vision Components IMX565 MIPI Camera
 
+SOLIDWORKS part files for the system enclosure can be obtained from [https://github.com/jklingspon/eits-cad]
+
 ### Setup Instructions:
 Though created for use with [Skynix](https://github.com/jklingspon/skynix), the system environment can be replicated easily on Raspberry Pi OS Lite Bullseye for arm64.
 
