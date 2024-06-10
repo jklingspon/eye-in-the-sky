@@ -24,7 +24,7 @@ class AdsbHandler(threading.Thread):
 
     def fetch_aircraft_data(self):
         try:
-            response = requests.get("http://10.0.5.10:8080/data.json")
+            response = requests.get("http://127.0.0.1:8080/data.json")
             if response.status_code == 200:
                 data = response.json()
                 for aircraft in data:

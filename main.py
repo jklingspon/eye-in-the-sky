@@ -38,12 +38,11 @@ class MainService(QMainWindow):
 
     def display_frame(self, frame):
         # Convert the image to RGB format
-        rgb_image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        h, w, ch = rgb_image.shape
+        h, w, ch = frame.shape
         bytes_per_line = ch * w
 
         # Create a QImage from the RGB image
-        qimg = QImage(rgb_image.data, w, h, bytes_per_line, QImage.Format_RGB888)
+        qimg = QImage(frame.data, w, h, bytes_per_line, QImage.Format_RGB888)
 
         # Display the QImage on the label
         self.label.setPixmap(QPixmap.fromImage(qimg))

@@ -38,9 +38,9 @@ class GpsHandler(threading.Thread):
                     self.location['heading'] == parsed.heading
 
                 if self.location['lon'] == 0:
-                    self.location['lon'] = 33.120496
-                    self.location['lat'] = -117.281936
-                    self.location['alt'] = 63.34
+                    self.location['lat'] = 33.098986
+                    self.location['lon'] = -117.278447
+                    self.location['alt'] = 60.1
                     self.location['heading'] = 0
 
             self.data_queue.put(('gps', self.location))
